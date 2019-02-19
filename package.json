@@ -1,0 +1,30 @@
+{
+  "name": "ccunits",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dractw/ccunits.git"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "decimal",
+    "fractions",
+    "decimal",
+    "part",
+    "unit"
+  ],
+  "author": "dractw@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dractw/ccunits/issues"
+  },
+  "homepage": "https://github.com/dractw/ccunits#readme",
+  "dependencies": {
+    "big.js": "^5.2.2"
+  }
+}
