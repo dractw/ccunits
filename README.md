@@ -4,7 +4,7 @@ Convert the human-readable of cryptocurrency number  to minimum units, depending
 ## Installation
 
 ```bash
-npm install ccunits
+npm i ccunits
 ```
 
 ## Usage
