@@ -5,6 +5,7 @@ const big = (value = 0) => {
 }
 
 const formatted = (value = 0, currencyDecimal = 0) => {
+  
   value = big(value).toString()
   
   const [integer, decimal] = value.split('.')
