@@ -27,7 +27,7 @@ Convert from minimal unit
 ```js
 import { fromMinimal } from 'ccunit';
 
-toMinimal('100546675200000000', 18) // '0.1005466752'
+fromMinimal('100546675200000000', 18) // '0.1005466752'
 ```
 
 ## License
