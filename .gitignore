@@ -6,3 +6,7 @@ gen
 
 # npm shrink
 package-lock.json
+
+#dev-packages
+node_modules
+
