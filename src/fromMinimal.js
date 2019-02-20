@@ -13,7 +13,7 @@ const toCurrencyUnit = (value = 0, currencyDecimal = 0) => {
     .replace(/^0+/, '') || 0
   
   const fractionPart = value.substring(value.length - currencyDecimal)
-    .padStart(this.currencyDecimal, '0')
+    .padStart(currencyDecimal, '0')
     .replace(/0+$/, '')
   
   if (fractionPart !== '') {
