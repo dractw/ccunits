@@ -2,7 +2,7 @@
   "name": "ccunits",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "dist/ccunits.js",
   "scripts": {
     "build": "rollup --config -c ./build/rollup.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
