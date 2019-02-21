@@ -4,7 +4,7 @@ const big = (value = 0) => {
   return new Big(value)
 }
 
-const toMinimal = (value = 0, currencyDecimal = 0) => {
+export default function toMinimal(value = 0, currencyDecimal = 0) {
   
   value = big(value).toString()
   
@@ -26,5 +26,3 @@ const toMinimal = (value = 0, currencyDecimal = 0) => {
   
   return result
 }
-
-export default toMinimal()

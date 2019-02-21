@@ -4,7 +4,7 @@ const big = (value = 0) => {
   return new Big(value)
 }
 
-const toCurrencyUnit = (value = 0, currencyDecimal = 0) => {
+export default function toCurrencyUnit (value = 0, currencyDecimal = 0) {
   
   value = big(value).toString()
   
@@ -22,5 +22,3 @@ const toCurrencyUnit = (value = 0, currencyDecimal = 0) => {
   
   return `${integerPart}`
 }
-
-export default toCurrencyUnit()

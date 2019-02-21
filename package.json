@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/ccunits.js",
   "scripts": {
-    "build": "rollup --config -c ./build/rollup.config.js",
+    "build": "rollup --config -c ./build/rollup.config.js --format umd --name 'ccunits'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

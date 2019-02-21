@@ -4,8 +4,7 @@ const big = (value = 0) => {
   return new Big(value)
 }
 
-const formatted = (value = 0, currencyDecimal = 0) => {
-  
+export default function formatted(value = 0, currencyDecimal = 0) {
   value = big(value).toString()
   
   const [integer, decimal] = value.split('.')
@@ -20,5 +19,3 @@ const formatted = (value = 0, currencyDecimal = 0) => {
   
   return integer
 }
-
-export default formatted()
