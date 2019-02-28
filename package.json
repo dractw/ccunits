@@ -1,6 +1,6 @@
 {
   "name": "ccunits",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/ccunits.js",
   "scripts": {
@@ -13,10 +13,19 @@
   },
   "keywords": [
     "cryptocurrency",
+    "crypto",
+    "bitcoin",
+    "ethereum",
+    "satoshi",
+    "wei",
+    "ripple",
+    "xrp",
+    "btc",
+    "eth",
+    "convert",
+    "format",
     "decimal",
     "fractions",
-    "decimal",
-    "part",
     "unit"
   ],
   "author": "dractw@gmail.com",
