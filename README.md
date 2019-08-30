@@ -10,6 +10,8 @@ npm i ccunits
 ## Usage
 ```js
 const ccunits = require('ccunits');
+OR
+import { toMinimal, fromMinimal, formatted } from 'ccunits'
 ```
 
 Format input number by cryptocurrency decimal precision
