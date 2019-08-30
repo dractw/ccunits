@@ -1,11 +1,24 @@
 {
   "name": "ccunits",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "dist/ccunits.js",
   "scripts": {
     "build": "rollup --config -c ./build/rollup.config.js --format umd --name 'ccunits'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=testing jest"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "moduleDirectories": [
+      "node_modules",
+      "dist",
+      "src"
+    ],
+    "testRegex": "/tests/*.*.js$",
+    "rootDir": "."
   },
   "repository": {
     "type": "git",
@@ -26,7 +39,9 @@
     "format",
     "decimal",
     "fractions",
-    "unit"
+    "unit",
+    "converter",
+    "formatter"
   ],
   "author": "dractw@gmail.com",
   "license": "MIT",
@@ -39,9 +54,15 @@
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.3.1",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-uglify": "^6.0.2"
+    "@babel/runtime": "^7.5.5",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "rollup": "^1.20.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.3"
   }
 }
